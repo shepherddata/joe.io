@@ -110,7 +110,9 @@ function ChatAgent({ onClose }: { onClose?: () => void }) {
         {messages.length === 0 && (
           <div className="text-center text-zinc-500 text-sm py-8">
             Ask me anything about my skills, projects, or experience!
+
             Note: this is a demo - responses are based on my resume and may not be 100% accurate.
+            
             Always use caution when interpreting AI-generated content!
           </div>
         )}
