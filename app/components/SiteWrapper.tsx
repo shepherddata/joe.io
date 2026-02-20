@@ -99,7 +99,7 @@ function ChatAgent({ onClose }: { onClose?: () => void }) {
       <div className="border-b border-zinc-200 dark:border-zinc-800 p-4 flex justify-between items-start">
         <div>
           <h3 className="font-semibold text-black dark:text-white">Ask About My Background</h3>
-          <p className="text-xs text-zinc-500 mt-1">Powered by AI</p>
+          <p className="text-xs text-zinc-500 mt-1">Powered by ChatGPT</p>
         </div>
         <div>
           <button onClick={onClose} className="text-sm text-zinc-500">Close</button>
@@ -110,6 +110,8 @@ function ChatAgent({ onClose }: { onClose?: () => void }) {
         {messages.length === 0 && (
           <div className="text-center text-zinc-500 text-sm py-8">
             Ask me anything about my skills, projects, or experience!
+            Note: this is a demo - responses are based on my resume and may not be 100% accurate.
+            Always use caution when interpreting AI-generated content!
           </div>
         )}
         {messages.map((msg, i) => (

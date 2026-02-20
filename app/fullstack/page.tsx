@@ -50,16 +50,16 @@ export default function FullStack() {
 
   const experience: Experience[] = [
     {
-      role: 'Senior Developer',
-      company: 'Tech Company',
-      period: '2022 - Present',
+      role: 'Software Engineer, Application Technical Lead',
+      company: 'PNC Bank',
+      period: '2021 - Present',
       description: 'Led development of core product features',
     },
     {
       role: 'Full Stack Developer',
-      company: 'Startup',
-      period: '2020 - 2022',
-      description: 'Built product from scratch, scaled to 1M users',
+      company: 'Shepherd Software Solutions',
+      period: '2020 - Present',
+      description: 'Built boutique software solutions on demand for clients',
     },
   ];
 
