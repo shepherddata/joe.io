@@ -114,7 +114,7 @@ export default function Home() {
               <span>↓</span>
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/shepherddata"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-zinc-200 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 text-black dark:text-white rounded-lg font-medium transition"
@@ -122,7 +122,7 @@ export default function Home() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com"
+              href="www.linkedin.com/in/joseph-shepherd-linked"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-zinc-200 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 text-black dark:text-white rounded-lg font-medium transition"
