@@ -81,7 +81,7 @@ export default function DataScience() {
               GitHub
             </a>
             <a
-              href="www.linkedin.com/in/joseph-shepherd-linked"
+              href="https://www.linkedin.com/in/joseph-shepherd-linked"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-zinc-200 dark:bg-zinc-800 hover:bg-zinc-300 dark:hover:bg-zinc-700 text-black dark:text-white rounded-lg font-medium transition"
