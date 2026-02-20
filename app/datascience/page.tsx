@@ -38,7 +38,7 @@ export default function DataScience() {
     },
     {
       category: 'Machine Learning',
-      items: ['scikit-learn', 'XGBoost', 'Model Evaluation', 'Feature Engineering'],
+      items: ['scikit-learn', 'Model Evaluation', 'Feature Engineering'],
     },
     {
       category: 'Tools',
@@ -48,16 +48,10 @@ export default function DataScience() {
 
   const experience: DSExperience[] = [
     {
-      role: 'Data Analyst',
-      company: 'Analytics Team',
-      period: '2019 - 2021',
-      description: 'Designed dashboards and performed exploratory analysis to inform product decisions.',
-    },
-    {
-      role: 'Data Scientist',
-      company: 'Insights Corp',
-      period: '2021 - Present',
-      description: 'Built production ML pipelines and collaborated with engineering to deploy models.',
+      role: 'Masters Student - Data Science',
+      company: 'Indiana University - Bloomington',
+      period: '2022 - 2024',
+      description: 'Focus on machine learning. Completed projects in ML algorithms, predictive modeling, and data visualization.',
     },
   ];
 
@@ -67,7 +61,7 @@ export default function DataScience() {
         <section className="space-y-6">
           <div>
             <h2 className="text-4xl font-bold text-black dark:text-white">Data Scientist / Analyst</h2>
-            <p className="text-xl text-zinc-600 dark:text-zinc-400 mt-2">Extracting insights and building models to drive decisions</p>
+            <p className="text-xl text-zinc-600 dark:text-zinc-400 mt-2">Extracting insights and building models to drive smart business decisions</p>
           </div>
           <div className="flex flex-wrap gap-3">
             <a
@@ -133,7 +127,7 @@ export default function DataScience() {
         </section>
 
         <section className="space-y-8">
-          <h3 className="text-2xl font-bold text-black dark:text-white">Experience</h3>
+          <h3 className="text-2xl font-bold text-black dark:text-white">Experience & Education</h3>
           <div className="space-y-6">
             {experience.map((exp, i) => (
               <div key={i} className="border-l-2 border-blue-600 pl-6 py-2">
