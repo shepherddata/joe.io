@@ -20,14 +20,10 @@ interface DSExperience {
 export default function DataScience() {
   const projects: DSProject[] = [
     {
-      title: 'Customer Churn Model',
-      description: 'Built a predictive model to identify churn risk using gradient boosting and feature engineering.',
+      title: 'Variety of Data Science Projects',
+      description: 'Completed projects in machine learning, predictive modeling, and data visualization as part of my Masters program in Data Science at Indiana University.',
       tools: ['Python', 'scikit-learn', 'Pandas', 'SQL'],
-    },
-    {
-      title: 'Sales Forecasting',
-      description: 'Time-series forecasting pipeline for monthly sales using Prophet and model ensembles.',
-      tools: ['Prophet', 'Pandas', 'Matplotlib'],
+      link: 'https://github.com/shepherddata',
     },
   ];
 

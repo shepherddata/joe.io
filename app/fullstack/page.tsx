@@ -20,16 +20,15 @@ interface Experience {
 export default function FullStack() {
   const projects: Project[] = [
     {
-      title: 'Project One',
-      description: 'Built a full-stack application with React and Node.js',
-      technologies: ['React', 'Node.js', 'PostgreSQL', 'TypeScript'],
-      link: 'https://github.com',
+      title: 'Personal Site & Portfolio',
+      description: 'Built a front end application with React and Typescript, and Vercel for hosting',
+      technologies: ['React', 'Node.js', 'TypeScript', 'Vercel'],
+      link: 'https://github.com/shepherddata/joe.io',
     },
     {
-      title: 'Project Two',
-      description: 'Created an AI-powered tool for data analysis',
-      technologies: ['Next.js', 'Python', 'OpenAI API'],
-      link: 'https://github.com',
+      title: 'PNC Bank - HR Software Development',
+      description: 'Created and maintained core product features for a large scale HR software solution used by tens ofthousands of employees',
+      technologies: ['FastAPI', 'Python', 'MS-SQL Server', 'Helm', 'Angular', 'JavaScript', 'TypeScript'],
     },
   ];
 
