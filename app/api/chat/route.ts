@@ -22,9 +22,13 @@ export async function POST(request: NextRequest) {
     const { messages } = await request.json();
 
     const apiKey = process.env.OPENAI_API_KEY;
-    if (!apiKey) {
+    if (!apiKey || apiKey === 'sk_YOUR_NEW_KEY_HERE') {
+      console.error('OPENAI_API_KEY not configured in environment');
       return NextResponse.json(
-        { error: 'OpenAI API key not configured' },
+        { 
+          error: 'OpenAI API key not configured',
+          hint: 'Check your Vercel environment variables at https://vercel.com/dashboard'
+        },
         { status: 500 }
       );
     }
@@ -49,9 +53,23 @@ export async function POST(request: NextRequest) {
     if (!response.ok) {
       const error = await response.json();
       console.error('OpenAI API error:', error);
+      
+      if (response.status === 401) {
+        return NextResponse.json(
+          { 
+            error: 'Invalid OpenAI API key',
+            hint: 'Your API key may be expired or incorrect. Visit https://vercel.com/dashboard to update it.'
+          },
+          { status: 401 }
+        );
+      }
+      
       return NextResponse.json(
-        { error: 'Failed to get AI response' },
-        { status: 500 }
+        { 
+          error: 'Failed to get AI response',
+          details: error.error?.message || 'Unknown error'
+        },
+        { status: response.status }
       );
     }
 
@@ -62,7 +80,10 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Chat API error:', error);
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { 
+        error: 'Internal server error',
+        details: error instanceof Error ? error.message : 'Unknown error'
+      },
       { status: 500 }
     );
   }
