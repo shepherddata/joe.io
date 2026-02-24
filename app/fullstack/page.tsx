@@ -27,7 +27,7 @@ export default function FullStack() {
     },
     {
       title: 'PNC Bank - HR Software Development',
-      description: 'Created and maintained core product features for a large scale HR software solution used by tens ofthousands of employees',
+      description: 'Created and maintained core product features for a large scale HR software solution used by tens of thousands of employees',
       technologies: ['FastAPI', 'Python', 'MS-SQL Server', 'Helm', 'Angular', 'JavaScript', 'TypeScript'],
     },
   ];
