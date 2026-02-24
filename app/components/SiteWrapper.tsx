@@ -109,8 +109,6 @@ function ChatAgent({ onClose }: { onClose?: () => void }) {
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.length === 0 && (
           <div className="text-center text-zinc-500 text-sm py-8">
-            This chat is not currently linked to a live AI model.  At the moment, paying for a 
-
             Ask me anything about my skills, projects, or experience!
 
             Note: this is a demo - responses are based on my resume and may not be 100% accurate.
