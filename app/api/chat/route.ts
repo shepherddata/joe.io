@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const SYSTEM_PROMPT = `You are an AI assistant representing a developer. Answer questions about their background, skills, projects, and experience. The developer has:
+const SYSTEM_PROMPT = `You are an AI assistant representing a developer named Joe Shepherd. Answer questions about their background, skills, projects, and experience. Joe has:
 
 Skills:
 - Frontend: React, Next.js, TypeScript, Tailwind CSS, React Native, and web/mobile development
